@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DIVYADHARSHINI M | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fceba7;
+      color: #6b0000;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li {
+      cursor: pointer;
+    }
+    .header {
+      text-align: center;
+      padding: 80px 20px 40px 20px;
+    }
+    .header img {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+    .header h1 {
+      font-size: 60px;
+      margin: 0;
+    }
+    .header h3 {
+      margin-top: 10px;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      border-bottom: 2px solid #6b0000;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+    #resume {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    #resume a {
+      color: #6b0000;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .contact a {
+      color: #6b0000;
+      text-decoration: none;
+    }
+    
+  </style>
+</head>
+<body>
+  <nav>
+    <div><strong>Divya.</strong></div>
+    <ul>
+      <li onclick="scrollToSection('about')">About</li>
+      <li onclick="scrollToSection('education')">Education</li>
+      <li onclick="scrollToSection('certifications')">Certifications</li>
+      <li onclick="scrollToSection('projects')">Projects</li>
+      <li onclick="scrollToSection('skills')">Skills</li>
+      <li onclick="scrollToSection('resume')">Resume</li>
+      <li onclick="scrollToSection('contact')">Contact</li>
+    </ul>
+  </nav>
+
+  <div class="header">
+    <div style="display: flex; align-items: center; justify-content: center; gap: 30px; flex-wrap: wrap;">
+      <img src="C:\Users\divya\OneDrive\Pictures\dharshu3.jpg" alt="DIVYADHARSHINI M">
+      <div>
+        <h1 style="font-size: 60px; margin: 0;">DIVYADHARSHINI M</h1>
+        <h3 style="margin-top: 10px;">Pre-Final Year Student | AI Engineer</h3>
+      </div>
+    </div>
+  </div>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Divyadharshini, a passionate and aspiring Artificial Intelligence Engineer currently pursuing my B.Tech in AI and Machine Learning at M Kumarasamy College of Engineering, Karur. With a strong foundation in mathematics, programming, and machine learning, I am dedicated to building smart solutions that solve real-world problems efficiently.</p>
+    <p>My interests lie at the intersection of deep learning, computer vision, and natural language processing. I have worked on several projects that showcase my ability to turn data into actionable insights and build intelligent systems. I'm also fascinated by the ethical and responsible use of AI to ensure fair and unbiased outcomes in applications.</p>
+    <p>In addition to my technical skills, I have a growing enthusiasm for UI/UX design. This allows me to create applications that are not only smart but also intuitive and user-friendly.</p>
+    <p>My ultimate goal is to become a full-stack AI engineer—someone who can handle everything from data preprocessing and model development to deployment and user experience design.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul style="font-size: 18px;">
+      <li><strong>Bachelor Of Technology</strong> - Artificial Intelligence and Machine Learning, M Kumarasamy College Of Engineering, Karur.</li>
+      <li><strong>HSC</strong> - Bharani Park Matric Hr. Sec. School, Karur-639001.</li>
+      <li><strong>SSLC</strong> - Little Angels' English Hr. Sec. School, Karur-639001.</li>
+    </ul>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul style="font-size: 18px;">
+      <li>Azure Fundamentals</li>
+      <li>Oracle Generative AI</li>
+      <li>Cisco CSS Essentials</li>
+      <li>Data Analytics with Python</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul style="font-size: 18px;">
+      <li>Sentimental Analysis in Social Media</li>
+      <li>Customer Churn Prediction</li>
+      <li>Crop Prediction</li>
+      <li>Ether Glow AI</li>
+      <li>URL Shortener</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul style="font-size: 18px;">
+      <li>Node.js</li>
+      <li>Python</li>
+      <li>Java</li>
+      <li>C</li>
+      <li>C++</li>
+      <li>HTML</li>
+    </ul>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <p>You can view or download my most updated resume from the link below:</p>
+    <a href="https://drive.google.com/drive/folders/1IV6LlWUBWF_0seIns1tVGtbHjZVzDeE0" target="_blank">📄 View My Resume</a>
+    <br><br>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p style="font-size: 18px;">Email: <a href="mailto:divyadh16@gmail.com">divyadh16@gmail.com</a></p>
+    <p style="font-size: 18px;">Phone: +91-7904819114</p>
+    <p style="font-size: 18px;">LinkedIn: <a href="https://linkedin.com/in/divyadharshini" target="_blank">linkedin.com/in/divyadharshini</a></p>
+  </section>
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
